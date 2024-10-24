@@ -1,0 +1,78 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: rgb(60, 200, 150);
+}
+
+section {
+  border: 2px black solid;
+  width: 33.33.0%;
+  float: left;
+  position: relative;
+  /* margin: 1%; */
+
+  padding: 20px;
+  padding-top: 60px;
+  color: black;
+  background-color: lightblue;
+  margin: 1px;
+}
+
+p {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  color: white;
+}
+
+section > span {
+  background-color: rgb(134, 9, 9);
+}
+
+span p.title {
+  font-weight: bold;
+  color:white;
+}
+
+span {
+  border: 1px solid lightblue;
+  position: absolute;
+  width: 35%;
+  height: 30%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/* Destop */
+/* 992px */
+
+/* Tablet */
+/* 768px and 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  section.first {
+    width: 49.5%;
+  }
+
+  section.second {
+    width: 49.5%;
+  }
+  section.third {
+    width: 100%;
+    
+  }
+}
+
+/* max-width 767px */
+@media (max-width: 767px) {
+  section {
+    width: 100%;
+  }
+}
