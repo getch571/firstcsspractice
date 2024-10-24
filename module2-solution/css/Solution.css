@@ -1,0 +1,73 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: rgb(60, 200, 150);
+}
+
+section {
+  border: 2px black solid;
+  width: 33%;
+  float: left;
+  position: relative;
+  
+
+  padding: 20px;
+  padding-top: 60px;
+  color: black;
+  background-color: lightblue;
+  margin: 1px;
+}
+
+p {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  padding-top:4%;
+  padding-bottom: 4%;
+  color: white;
+}
+
+section > span {
+  background-color: rgb(134, 9, 9);
+}
+
+span p.title {
+  font-weight: bold;
+  color:white;
+}
+
+span {
+  border: 1px solid lightblue;
+  position: absolute;
+  width: 30%;
+  height: 25%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  section.first {
+    width: 49.0%;
+  }
+
+  section.second {
+    width: 49%;
+  }
+  section.third {
+    width: 98%;
+    
+  }
+}
+
+@media (max-width: 767px) {
+  section {
+    width: 98%;
+  }
+}
